@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(/bg-desktop.svg);
+    background-image: url(bg-desktop.svg);
     background-color: var(--Violet);
     font-family: "Open Sans", sans-serif;
 }
@@ -121,7 +121,7 @@ border-radius: 50%;
 @media (max-width:400px) {
 
     body{
-        background-image: url(/bg-mobile.svg);
+        background-image: url(bg-mobile.svg);
       
     }
 

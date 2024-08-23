@@ -10,12 +10,10 @@
 }
 
 body {
-    background-image: url(images/bg-desktop.svg);
-    background-color: var(--Violet);
-    background-size: cover; /* Ensures the background image covers the whole page */
-    background-position: center; /* Centers the background image */
+    background: url(images/bg-desktop.svg) no-repeat center center fixed;
+    background-size: cover;
     font-family: "Open Sans", sans-serif;
-    font-weight: normal; /* Correct value for font-weight */
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -41,12 +39,12 @@ main {
 
 .icons-for-content {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 50px;
 }
 
 .icons-for-content i {
-    font-size: 24px; /* Adjusted for better visibility */
+    font-size: 24px;
     padding: 10px;
     border: solid 1px;
     border-radius: 50%;
@@ -66,7 +64,6 @@ main {
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-style: normal;
 }
 
 .content p {
@@ -117,6 +114,7 @@ main {
 
 @media (max-width: 400px) {
     body {
-        background-image: url(images/bg-mobile.svg);
+        background: url(images/bg-mobile.svg) no-repeat center center fixed;
+        background-size: cover;
     }
 }

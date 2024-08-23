@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,68 +7,71 @@
 :root {
     --Violet: hsl(257, 40%, 49%);
     --Soft-Magenta: hsl(300, 69%, 71%);
+
 }
 
 body {
-    background: url(images/bg-desktop.svg) no-repeat center center fixed;
-    background-size: cover;
+    background-image: url(/images/bg-desktop.svg);
+    background-color: var(--Violet);
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-style: normal;
 }
 
-header {
+
+header{
     padding: 40px;
 }
 
-main {
+main{
     display: flex;
     padding: 40px;
     justify-content: space-between;
     gap: 30px;
+    
+    
 }
 
-.img img {
+.img img{
     width: 100%;
 }
 
-.content {
+.content{
     width: 50%;
     color: white;
 }
 
-.icons-for-content {
+.icons-for-content{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 50px;
 }
 
-.icons-for-content i {
-    font-size: 24px;
-    padding: 10px;
-    border: solid 1px;
-    border-radius: 50%;
+.icons-for-content i{
+font-size: 10px;
+padding: 10px;
+border: solid 1px;
+border-radius: 50%;
 }
+.icons-for-content a{
+   text-decoration: none;
+   color: white;
+   margin: 5px;
+    }
 
-.icons-for-content a {
-    text-decoration: none;
-    color: white;
-    margin: 5px;
-}
+    .icons-for-content a:hover{
+        
+        color: var(--Soft-Magenta);
+         }
 
-.icons-for-content a:hover {
-    color: var(--Soft-Magenta);
-}
-
-.content h1 {
+.content h1{
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-style: normal;
 }
 
-.content p {
+.content p{
     margin-bottom: 20px;
-    color: #bababa;
+    color: #bababa;;
 }
 
 .content button {
@@ -83,38 +86,43 @@ main {
 .content button:hover {
     color: white;
     background-color: var(--Soft-Magenta);
+
 }
 
-@media (max-width: 1001px) {
-    .content h1 {
-        font-size: 25px;
+@media (max-width:1001px) {
+    .content h1{
+      font-size: 25px;
     }
 }
 
-@media (max-width: 778px) {
-    main {
+@media (max-width:778px) {
+    main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .content {
+    .content{
         text-align: center;
         width: 100%;
     }
-    .icons-for-content {
+    .icons-for-content{
         position: static;
     }
-    header img {
+    header img{
         width: 130px;
     }
     .content button {
         padding: 10px 70px;
+     
     }
+
 }
 
-@media (max-width: 400px) {
-    body {
-        background: url(images/bg-mobile.svg) no-repeat center center fixed;
-        background-size: cover;
+@media (max-width:400px) {
+
+    body{
+        background-image: url(/images/bg-mobile.svg);
+      
     }
+
 }
